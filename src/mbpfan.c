@@ -99,7 +99,9 @@ t_sensors *retrieve_sensors()
     char *path = NULL;
     char *path_begin = NULL;
 
-    if (is_legacy_kernel()) {
+// Always use new sensor path.
+//    if (is_legacy_kernel()) {
+    if (0) {
         if(verbose) {
             printf("Using legacy sensor path for kernel < 3.15.0\n");
 
